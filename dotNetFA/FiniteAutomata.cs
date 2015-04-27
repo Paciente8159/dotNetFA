@@ -350,7 +350,7 @@ namespace dotNetFA
         public T Epsilon
         {
             get;
-            protected set;
+            private set;
         }
 
         /// <summary>
