@@ -257,7 +257,7 @@ namespace dotNetFA
         /// Offsets all internal states based on = initial state + offset
         /// </summary>
         /// <param name="newInitial">The offset from the <see cref="InitialState">InitialState</see>/></param>
-        internal void OffsetStates(int newInitial)
+        public void OffsetStates(int newInitial)
         {
             int offset = newInitial - this.InitialState;
 
@@ -280,7 +280,7 @@ namespace dotNetFA
         /// </summary>
         /// <param name="oldNumber">State old number</param>
         /// <param name="newNumber">State new number</param>
-        internal void RenumberState(int oldNumber, int newNumber)
+        public void RenumberState(int oldNumber, int newNumber)
         {
             if (this.InitialState == oldNumber)
             {
